@@ -3,6 +3,9 @@ import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import Post from '../views/Post.vue'
 
+import PostDetails from '../views/Details/PostDetails.vue'
+import PostCreate from '../views/Create/PostCreate.vue'
+
 Vue.use(VueRouter)
 
 const routes = [{
@@ -14,7 +17,17 @@ const routes = [{
         path: '/post',
         name: 'Post',
         component: Post
-    }
+    },
+    {
+        path: '/create_post',
+        name: 'PostCreate',
+        component: PostCreate
+    },
+    {
+        path: '/post/:id',
+        name: 'PostDetails',
+        component: PostDetails
+    },
 ]
 
 const router = new VueRouter({

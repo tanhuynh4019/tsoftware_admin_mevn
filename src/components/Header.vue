@@ -104,19 +104,20 @@ export default {
       {
         name: "Bài viết",
         icon: "mdi-post",
+        key: 'post',
         link: "/post",
         categorys: [
           {
             name: "Tất cả bài viết",
-            link: "/post",
+            link: "/post?post_status=all",
           },
           {
             name: "Viết bài mới",
-            link: "/category",
+            link: "/create_post",
           },
           {
             name: "Chuyên mục",
-            link: "/category",
+            link: "/",
           },
         ],
       },
